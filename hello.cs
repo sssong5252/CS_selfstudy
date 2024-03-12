@@ -4,7 +4,7 @@ class HelloWorld {
    static void Main(string[] args) {
       Console.WriteLine("hellowol");
       int number;
-      number = 7;
+      number = 6;
       Console.WriteLine(number);
 
       if(number == 7) {
@@ -17,6 +17,7 @@ class HelloWorld {
          }
          else {
             Console.WriteLine("num is not 7");
+            break;
          }
       }
    }
