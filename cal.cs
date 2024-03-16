@@ -1,33 +1,58 @@
 using System;
 
-namespace cal{
-    class cacul {
+namespace cal
+{
+    class cacul
+    {
+        static int add(ref int a, ref int b)
+        {
+            return a + b;
+        }
+        
+        static int min(ref int q, ref int w)
+        {
+            return q - w;
+        }
+        
+        static int mul(ref int e, ref int r)
+        {
+            return e * r;
+        }
+        
+        static int dev(ref int t, ref int y)
+        {
+            return t / y;
+        }
 
-        static void add(ref int a, ref int b) {
-            a + b;
-        }
-        static void min(ref int a, ref int b) {
-            a - b;
-        }
-        static void mul(ref int a, ref int b) {
-            a * b;
-        }
-        static void dev(ref int a, ref int b) {
-            a / b;
-        }
-
-        static void Main(String[] args){
-            //함수를 사용한 계산기 코드입니다.
+        static void Main(string[] args)
+        {
+            // 함수를 사용한 계산기 코드입니다.
             string oper = Console.ReadLine();
-            string fst = Console.Readline();
+            string fst = Console.ReadLine();
             int num1 = int.Parse(fst);
             string sec = Console.ReadLine();
             int num2 = int.Parse(sec);
 
-            if(oper == '+') {
-                int res = add(ref num1, ref num2);
+            int res = 0;
 
+            if (oper == "+")
+            {
+                res = add(ref num1, ref num2);
             }
+            else if (oper == "-")
+            {
+                res = min(ref num1, ref num2);
+            }
+            else if (oper == "*")
+            {
+                res = mul(ref num1, ref num2);
+            }
+            else if (oper == "/")
+            {
+                res = dev(ref num1, ref num2);
+            }
+
+            Console.WriteLine("결과: " + res);
         }
     }
 }
