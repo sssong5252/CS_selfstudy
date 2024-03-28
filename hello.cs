@@ -2,7 +2,8 @@ using System;
 
 namespace hello {
     class HelloWorld {
-        static void change(ref int x, ref int y) { //ref는 값을 전달하기 위해 쓰인다. 콜바이레퍼런스?? 그거 말하는 것 같음
+        static void change(ref int x, ref int y) { 
+            //ref는 값을 전달하기 위해 쓰인다. 콜바이레퍼런스?? 그거 말하는 것 같음
             int tmp;
             tmp = x;
             x = y;

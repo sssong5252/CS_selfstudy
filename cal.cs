@@ -24,6 +24,16 @@ namespace cal
             return t / y;
         }
 
+        40
+
+        20 카메라
+        15 교통비
+        1 오티티
+        3 데이트
+        1 용돈
+
+
+
         static void Main(string[] args)
         {
             // 함수를 사용한 계산기 코드입니다.
