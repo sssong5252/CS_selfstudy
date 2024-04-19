@@ -26,7 +26,6 @@ namespace cal
 
 
 
-
         static void Main(string[] args)
         {
             // 함수를 사용한 계산기 코드입니다.
